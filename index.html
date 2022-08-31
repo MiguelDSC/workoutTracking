@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.html"></script>
+
+    <title>Workout tracking</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark nav-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Workout Tracker</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#tracking"
+                >Track Workout</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Workout History</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container outer-container">
+      <!-- <span id="workout-selection-container">
+        <button class="btn-secondary">Upper</button>
+        <button class="btn-secondary">Lower</button>
+      </span> -->
+
+      <div class="container module-container">
+        <div id="stopwatch" class="section">
+          <h1>STOPWATCH</h1>
+          <div class="center">
+            <div id="digitContainer"><h1>00:00</h1></div>
+            <div class="btn-container">
+              <button class="btn btn-primary btn-lg">Start</button>
+              <div class="space"></div>
+              <button class="btn btn-danger btn-lg">Stop</button>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="tracking">
+          <h1>TRACKING</h1>
+          <div class="center">
+            <table id="tracking-table">
+              <thead>
+                <tr>
+                  <th>Excersize</th>
+                  <th>SET 1</th>
+                  <th>SET 2</th>
+                  <th>SET 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Excersize 1</td>
+                  <td><input class="" type="number" /></td>
+                  <td><input type="" type="number" /></td>
+                  <td><input type="" type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Excersize 2</td>
+                  <td><input type="" type="number" /></td>
+                  <td><input type="" type="number" /></td>
+                  <td><input type="" type="number" /></td>
+                </tr>
+
+                <tr>
+                  <td>Excersize 3</td>
+                  <td><input type="" type="number" /></td>
+                  <td><input type="" type="number" /></td>
+                  <td><input type="" type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Excersize 4</td>
+                  <td><input class="" type="number" /></td>
+                  <td><input class="" type="number" /></td>
+                  <td><input class="" type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Excersize 5</td>
+                  <td><input type="" type="number" /></td>
+                  <td><input type="" type="number" /></td>
+                  <td><input type="" type="number" /></td>
+                </tr>
+
+                <tr>
+                  <td>Excersize 6</td>
+                  <td><input type="" type="number" /></td>
+                  <td><input type="" type="number" /></td>
+                  <td><input type="" type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Excersize 7</td>
+                  <td><input type="" type="number" /></td>
+                  <td><input type="" type="number" /></td>
+                  <td><input type="" type="number" /></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="btn-container">
+              <button class="btn btn-primary btn-lg">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
