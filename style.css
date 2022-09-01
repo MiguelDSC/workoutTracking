@@ -1,12 +1,13 @@
+body {
+  background-color: #c4c4c4;
+}
+
 .navbar-brand {
   color: white !important;
 }
 
 .nav-link {
   color: white !important;
-}
-
-.outer-container {
 }
 
 #workout-selection-container {
@@ -23,16 +24,25 @@
 
 .module-container {
   width: 100%;
-  height: 100%;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .section {
   height: 80vh;
   border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin-bottom: 120px;
+  background-color: #e4dfdf;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 /* stopwatch part */
@@ -42,14 +52,10 @@
   justify-content: center;
 }
 
-#stopwatch h1 {
-  margin: auto;
-}
-
 .center {
   width: 100%;
   margin: auto;
-  background-color: grey;
+  background-color: #e4dfdf;
 }
 
 #digitContainer {
@@ -62,11 +68,17 @@
 
 #digitContainer h1 {
   margin: auto;
-  font-size: 6rem;
+  font-size: 7rem;
 }
 
-.space {
+.btn-space {
   width: 10px;
+  height: auto;
+  display: inline-block;
+}
+
+.module-space {
+  width: 30px;
   height: auto;
   display: inline-block;
 }
@@ -79,18 +91,15 @@
 
 /* trackform part */
 
-#tracking h1 {
-  margin: auto;
-}
-
 #tracking-table {
   width: 100%;
   table-layout: fixed;
+  margin: auto;
 }
 
 td {
   width: 50%;
-  background: grey;
+  background: #e4dfdf;
   padding: 5px;
 }
 th {
@@ -100,4 +109,43 @@ th {
 
 td input {
   width: 100%;
+}
+
+.nav-container {
+  padding-left: 12px;
+  margin-top: 4px;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.comment-container label {
+  margin-left: 5px;
+}
+
+.comment-container textarea {
+  margin: 5px;
+  height: 150px;
+}
+
+/* media query for desktop */
+
+@media screen and (min-width: 992px) {
+  .module-container {
+    flex-direction: row;
+    height: 90vh;
+  }
+  .section {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+  }
+
+  #stopwatch {
+    width: 40%;
+  }
 }

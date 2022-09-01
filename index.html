@@ -18,7 +18,7 @@
     <title>Workout tracking</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-dark nav-custom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark nav-custom">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Workout Tracker</a>
         <button
@@ -35,7 +35,7 @@
       </div>
       <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
         <div class="bg-dark">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-container">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#tracking"
                 >Track Workout</a
@@ -49,27 +49,32 @@
       </div>
     </nav>
 
-    <div class="container outer-container">
+    
       <!-- <span id="workout-selection-container">
         <button class="btn-secondary">Upper</button>
         <button class="btn-secondary">Lower</button>
       </span> -->
 
-      <div class="container module-container">
+      <div class="container-fluid module-container">
         <div id="stopwatch" class="section">
-          <h1>STOPWATCH</h1>
+
           <div class="center">
+                      <h1 class="title">STOPWATCH</h1>
             <div id="digitContainer"><h1>00:00</h1></div>
             <div class="btn-container">
               <button class="btn btn-primary btn-lg">Start</button>
-              <div class="space"></div>
+              <div class="btn-space"></div>
               <button class="btn btn-danger btn-lg">Stop</button>
             </div>
           </div>
         </div>
+        <div class="module-space"></div>
+        <hr></hr>
         <div class="section" id="tracking">
-          <h1>TRACKING</h1>
           <div class="center">
+          <h1 class="title">TRACKING</h1>
+
+            <form action="">
             <table id="tracking-table">
               <thead>
                 <tr>
@@ -82,55 +87,60 @@
               <tbody>
                 <tr>
                   <td>Excersize 1</td>
-                  <td><input class="" type="number" /></td>
-                  <td><input type="" type="number" /></td>
-                  <td><input type="" type="number" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
                 </tr>
                 <tr>
                   <td>Excersize 2</td>
-                  <td><input type="" type="number" /></td>
-                  <td><input type="" type="number" /></td>
-                  <td><input type="" type="number" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
                 </tr>
 
                 <tr>
                   <td>Excersize 3</td>
-                  <td><input type="" type="number" /></td>
-                  <td><input type="" type="number" /></td>
-                  <td><input type="" type="number" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
                 </tr>
                 <tr>
                   <td>Excersize 4</td>
-                  <td><input class="" type="number" /></td>
-                  <td><input class="" type="number" /></td>
-                  <td><input class="" type="number" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
                 </tr>
                 <tr>
                   <td>Excersize 5</td>
-                  <td><input type="" type="number" /></td>
-                  <td><input type="" type="number" /></td>
-                  <td><input type="" type="number" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
                 </tr>
 
                 <tr>
                   <td>Excersize 6</td>
-                  <td><input type="" type="number" /></td>
-                  <td><input type="" type="number" /></td>
-                  <td><input type="" type="number" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
                 </tr>
                 <tr>
                   <td>Excersize 7</td>
-                  <td><input type="" type="number" /></td>
-                  <td><input type="" type="number" /></td>
-                  <td><input type="" type="number" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
+                  <td><input type="tel" /></td>
                 </tr>
               </tbody>
             </table>
-
-            <div class="btn-container">
-              <button class="btn btn-primary btn-lg">Save</button>
+            <div class="comment-container">
+              <label for="comment">Comment</label>
+              <textarea name="comment"></textarea></div>
+<div class="btn-container">
+              <button type="submit" class="btn btn-primary btn-lg">Save</button>
             </div>
-          </div>
+          </form>
+
+
+          
         </div>
       </div>
     </div>
