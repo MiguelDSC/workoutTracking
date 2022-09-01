@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="index.html"></script>
+    <script src="index.js" defer></script>
 
     <title>Workout tracking</title>
   </head>
@@ -60,11 +60,11 @@
 
           <div class="center">
                       <h1 class="title">STOPWATCH</h1>
-            <div id="digitContainer"><h1>00:00</h1></div>
+            <div id="digitContainer"><h1 id="display">00:00:00</h1></div>
             <div class="btn-container">
-              <button class="btn btn-primary btn-lg">Start</button>
+              <button id="start-stopwatch" class="btn btn-primary btn-lg">Start</button>
               <div class="btn-space"></div>
-              <button class="btn btn-danger btn-lg">Stop</button>
+              <button id="stop-stopwatch" class="btn btn-danger btn-lg">Stop</button>
             </div>
           </div>
         </div>
@@ -153,3 +153,4 @@
     ></script>
   </body>
 </html>
+
