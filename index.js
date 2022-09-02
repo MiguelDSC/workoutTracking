@@ -57,6 +57,7 @@ function stopTimer() {
   minutes = 0;
   hours = 0;
 
+  started = false;
   display.innerHTML = `00:00:00`;
   startBtn.innerText = "Start";
 }
