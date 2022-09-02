@@ -1,0 +1,56 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.container-fluid {
+  background-color: #68bd51;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: #ffffff;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.center {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.form-middle {
+  margin-top: 15px;
+}
+
+input {
+  height: 80px;
+  border: none;
+  line-height: 20px;
+  background-color: #f2f2f2;
+  text-indent: 20px;
+}
+
+form p {
+  color: gray;
+}
+
+button {
+  height: 60px;
+}
+
+span {
+  color: #198754;
+}
